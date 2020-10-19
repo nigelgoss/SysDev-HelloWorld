@@ -1,4 +1,3 @@
-#Hello world
-
-##VS Code
-##GitHub
+# Hello World
+## VS Code
+## GitHub
