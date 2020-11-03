@@ -10,3 +10,4 @@ Branch protection rules
 ### SonarCloud
 
 ### AWS - Elastic Beanstalk
+Configuration
