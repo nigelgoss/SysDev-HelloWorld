@@ -1,6 +1,8 @@
 (() => {
 
-  window.$ = {};
+  window.$ = {
+    pages: {},
+  };
 
   let load = [
     "script/db.js",
