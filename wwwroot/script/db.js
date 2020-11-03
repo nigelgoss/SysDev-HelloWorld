@@ -8,8 +8,8 @@ $.db = (() => {
       if (xhr.status !== 200) return;
       $success(xhr.responseText);
     };
-    xhr.open("POST", "/api/?something", true);
-    xhr.send();
+    xhr.open("POST", "/api/?"+$query, true);
+    xhr.send(JSON.stringify($parameters));
     
   };
   
