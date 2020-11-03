@@ -1,3 +1,9 @@
+<?php
+
+require_once('../config.php');
+
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -8,7 +14,7 @@
 
 	<body>
 
-		*<?php echo $_SERVER['MESSAGE']; ?>*
+		*<?php echo MESSAGE; ?>*
 
 	</body>
 
