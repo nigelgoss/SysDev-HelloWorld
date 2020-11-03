@@ -8,6 +8,7 @@ $.pages.main = (() => {
   const main = document.createElement("main");
   
   const button = document.createElement("button");
+  main.appendChild(button);
   button.textContent = "Go";
   button.onpointerdown = () => {
     $.db.query(null, null, $d => { alert($d); });
