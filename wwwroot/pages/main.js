@@ -9,9 +9,11 @@ $.pages.main = (() => {
   
   const button = document.createElement("button");
   main.appendChild(button);
-  button.textContent = "Go";
+  button.textContent = "Sign In";
   button.onpointerdown = () => {
-    $.db.query(null, null, $d => { alert($d); });
+    $.db.query("Sign-In", {"Username":"1", "Password":"2"}, $d => {
+      alert($d);
+    });
   };
   
   return {
