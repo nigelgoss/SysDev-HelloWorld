@@ -22,7 +22,7 @@
   });
   
   const loaded = () => {
-    $.pages.main.load()
+    $.pages.main.load();
   };
 
 })();
