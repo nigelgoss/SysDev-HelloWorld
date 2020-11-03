@@ -11,7 +11,7 @@ $.pages.main = (() => {
   main.appendChild(button);
   button.textContent = "Sign In";
   button.onpointerdown = () => {
-    $.db.query("Sign-In", {"Username":"1", "Password":"2"}, $d => {
+    $.db.query("sign-in", {"Username":"1", "Password":"2"}, $d => {
       alert($d);
     });
   };
@@ -20,7 +20,7 @@ $.pages.main = (() => {
   main.appendChild(button);
   button.textContent = "Sign Out";
   button.onpointerdown = () => {
-    $.db.query("Sign-Out", {}, $d => {
+    $.db.query("sign-out", {}, $d => {
       alert($d);
     });
   };
