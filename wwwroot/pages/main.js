@@ -7,7 +7,11 @@ $.pages.main = (() => {
 
   const main = document.createElement("main");
   
-  main.textContent = "Hello world";
+  const button = document.createElement("button");
+  button.textContent = "Go";
+  button.onpointerdown = () => {
+    $.db.query(null, null, $d => { alert($d); });
+  };
   
   return {
     load
