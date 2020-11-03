@@ -15,6 +15,7 @@
       load = load.filter($e => $e !== $v);
       if (load.length === 0) loaded();
     };
+    script.onerror = script.onload;
     document.head.appendChild(script);
   });
   
