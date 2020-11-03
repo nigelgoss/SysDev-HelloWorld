@@ -9,7 +9,7 @@ $.db = (() => {
       $success(xhr.responseText);
     };
     xhr.open("POST", "/api/?"+$query, true);
-    xhr.send(JSON.stringify($parameters));
+    xhr.send(JSON.stringify([$query, $parameters]));
     
   };
   
