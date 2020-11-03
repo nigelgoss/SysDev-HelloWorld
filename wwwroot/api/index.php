@@ -1,5 +1,5 @@
 <?php
 
-echo 'Hello world';
+require_once('../api/sign-in.php');
 
 ?>
