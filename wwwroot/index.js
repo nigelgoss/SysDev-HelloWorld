@@ -22,9 +22,7 @@
   });
   
   const loaded = () => {
-    
-    console.log(111);
-    
+    $.pages.main.load()
   };
 
 })();
