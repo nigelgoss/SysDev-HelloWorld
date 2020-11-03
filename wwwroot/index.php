@@ -8,7 +8,7 @@
 
 	<body>
 
-		Hello world
+		*<?php echo $_SERVER['MESSAGE']; ?>*
 
 	</body>
 
