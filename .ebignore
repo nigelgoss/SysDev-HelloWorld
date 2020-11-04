@@ -1,6 +1,6 @@
 ./
 .circleci/
-.ebextensions/*.config-option
+.ebextensions/~*
 .git/
 
 README.md
