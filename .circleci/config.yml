@@ -21,7 +21,7 @@ jobs:
       - run:
           name: Applying ElasticBeanstalk environment config file
           working_directory: ~/app/.ebextensions/
-          command: mv "environment.config.${CIRCLE_BRANCH}" "environment-${CIRCLE_BRANCH}.config"
+          command: mv "~env-${CIRCLE_BRANCH}.config" "env-${CIRCLE_BRANCH}.config"
       - run:
           name: Installing deployment dependencies
           working_directory: /
