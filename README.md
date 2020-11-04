@@ -16,6 +16,6 @@
 
 ### AWS - Elastic Beanstalk
 * .elasticbeanstalk/config.yml
-* .ebextensions/environment.config.prod
-* .ebextensions/environment.config.uat
+* **.ebextensions/environment.config.main** *main branch PHP $_SERVER variables*
+* **.ebextensions/environment.config.uat** *uat branch PHP $_SERVER variables*
 * **.ebextensions/php.config** *Configure PHP within Elastic Beanstalk*
