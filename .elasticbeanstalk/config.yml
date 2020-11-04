@@ -1,6 +1,8 @@
 branch-defaults:
  main:
    environment: Prod
+ uat:
+   environment: uat
 environment-defaults:
  e:
    branch: null
