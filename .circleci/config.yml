@@ -19,24 +19,16 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Branch to process
-          working_directory: ~/app/.ebextensions/
-          command: ls
-      - run:
-          name: Apply environment config file
+          name: Applying ElasticBeanstalk environment config file
           working_directory: ~/app/.ebextensions/
           command: mv "env-prod.config-option" "env-${CIRCLE_BRANCH}.config"
-      - run:
-          name: Branch to process
-          working_directory: ~/app/.ebextensions/
-          command: ls
       - run:
           name: Installing deployment dependencies
           working_directory: /
           command: 'sudo pip install awsebcli --upgrade'
       - run:
           name: Deploying application to Elastic Beanstalk
-          command: eb deploy --staged
+          command: eb deploy
 
 workflows:
   version: 2
