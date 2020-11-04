@@ -25,7 +25,7 @@ jobs:
       - run:
           name: Apply environment config file
           working_directory: ~/app/.ebextensions/
-          command: os.rename(r'env-prod.config-option',r'env-prod.config')
+          command: mv env-prod.config-option env-prod.config
       - run:
           name: Deploying application to Elastic Beanstalk
           command: eb deploy
