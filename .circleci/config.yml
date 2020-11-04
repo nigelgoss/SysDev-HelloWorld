@@ -24,7 +24,7 @@ jobs:
           command: 'sudo pip install awsebcli --upgrade'
       - run:
           name: Apply environment config file
-          working_directory: ~/app/.elasticbeanstalk/
+          working_directory: ~/app/.ebextensions/
           command: os.rename(r'env-prod.config-option',r'env-prod.config')
       - run:
           name: Deploying application to Elastic Beanstalk
