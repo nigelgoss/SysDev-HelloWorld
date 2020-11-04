@@ -19,6 +19,10 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Where are we
+          working_directory: ~/app/.ebextensions/
+          command: pwd
+      - run:
           name: Apply environment config file
           working_directory: ~/app/.ebextensions/
           command: mv env-prod.config-option env-prod.config
