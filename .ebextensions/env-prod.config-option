@@ -1,4 +1,3 @@
 option_settings:
   aws:elasticbeanstalk:application:environment:
-    AWS: TRUE
-    ENV: PROD1
+    ENV: PROD
