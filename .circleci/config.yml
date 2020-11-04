@@ -19,13 +19,12 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Where are we
-          working_directory: ~/app/.ebextensions/
-          command: pwd
+          name: Branch to process
+          command: echo ${CIRCLE_BRANCH}
       - run:
           name: Apply environment config file
           working_directory: ~/app/.ebextensions/
-          command: mv env-prod.config-option env-prod.config
+          command: mv "env-prod.config-option" "env-${CIRCLE_BRANCH}.config"
       - run:
           name: Installing deployment dependencies
           working_directory: /
