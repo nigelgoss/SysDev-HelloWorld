@@ -1,0 +1,19 @@
+branch-defaults:
+ main:
+   environment: Prod
+environment-defaults:
+ e:
+   branch: null
+   repository: null
+global:
+ application_name: DevOps-HelloWorld-test
+ default_ec2_keyname: null
+ default_platform: arn:aws:elasticbeanstalk:eu-west-2::platform/PHP 7.4 running on 64bit Amazon Linux 2
+ default_region: eu-west-2
+ include_git_submodules: true
+ instance_profile: null
+ platform_name: null
+ platform_version: null
+ profile: null
+ sc: git
+ workspace_type: Application
