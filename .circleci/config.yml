@@ -36,7 +36,7 @@ jobs:
           command: 'sudo pip install awsebcli --upgrade'
       - run:
           name: Deploying application to Elastic Beanstalk
-          command: eb deploy
+          command: eb deploy --staged
 
 workflows:
   version: 2
