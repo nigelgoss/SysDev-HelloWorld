@@ -21,11 +21,11 @@ jobs:
       - run:
           name: Applying ElasticBeanstalk environment config file
           working_directory: ~/app/.ebextensions/
-          command: mv "env-prod.config-option" "env-${CIRCLE_BRANCH}.config"
+          command: mv "environment.config.${CIRCLE_BRANCH}" "environment-${CIRCLE_BRANCH}.config"
       - run:
           name: Installing deployment dependencies
           working_directory: /
-          command: 'sudo pip install awsebcli --upgrade'
+          command: sudo pip install awsebcli --upgrade
       - run:
           name: Deploying application to Elastic Beanstalk
           command: eb deploy
