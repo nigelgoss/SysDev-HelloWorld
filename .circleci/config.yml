@@ -19,13 +19,13 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Installing deployment dependencies
-          working_directory: /
-          command: 'sudo pip install awsebcli --upgrade'
-      - run:
           name: Apply environment config file
           working_directory: ~/app/.ebextensions/
           command: mv env-prod.config-option env-prod.config
+      - run:
+          name: Installing deployment dependencies
+          working_directory: /
+          command: 'sudo pip install awsebcli --upgrade'
       - run:
           name: Deploying application to Elastic Beanstalk
           command: eb deploy
