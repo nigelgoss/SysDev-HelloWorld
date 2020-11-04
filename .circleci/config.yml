@@ -24,7 +24,7 @@ jobs:
           command: mv "~env-${CIRCLE_BRANCH}.config" "env-${CIRCLE_BRANCH}.config"
       - run:
           name: Updating JavaScript config file
-          command: cd .circleci && chmod +x ${CIRCLE_BRANCH}-js-config.sh && ${CIRCLE_BRANCH}-js-config.sh
+          command: cd .circleci && chmod +x ${CIRCLE_BRANCH}-js-config.sh && ./${CIRCLE_BRANCH}-js-config.sh
       - run:
           name: Installing deployment dependencies
           working_directory: /
