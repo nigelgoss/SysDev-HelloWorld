@@ -7,15 +7,16 @@
 ### GitHub
 * Branch protection rules
 
-### CircleCI
-* AWS_ACCESS_KEY_ID & AWS_SECRET_ACCESS_KEY
-* .circleci/config.yml
-
 ### SonarCloud
-* sonar-project.properties
+* **sonar-project.properties**
+
+### CircleCI
+* **AWS_ACCESS_KEY_ID** & **AWS_SECRET_ACCESS_KEY**
+* **.circleci/config.yml**
 
 ### AWS - Elastic Beanstalk
-* .elasticbeanstalk/config.yml
+* **.elasticbeanstalk/config.yml** *Elastic Beanstalk configuration*
 * **.ebextensions/environment.config.main** *main branch PHP $_SERVER variables*
 * **.ebextensions/environment.config.uat** *uat branch PHP $_SERVER variables*
 * **.ebextensions/php.config** *Configure PHP within Elastic Beanstalk*
+* **.ebignore** *Files to be excluded from deployment stage*
