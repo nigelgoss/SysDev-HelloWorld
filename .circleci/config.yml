@@ -19,9 +19,6 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Applying AWS profiles
-          command: cp .circleci/aws-config ~/.aws/config
-      - run:
           name: Applying ElasticBeanstalk environment config file
           working_directory: ~/app/.ebextensions/
           command: mv "~env-${CIRCLE_BRANCH}.config" "env-${CIRCLE_BRANCH}.config"
@@ -32,6 +29,9 @@ jobs:
           name: Installing deployment dependencies
           working_directory: /
           command: sudo pip install awsebcli --upgrade
+      - run:
+          name: Applying AWS profiles
+          command: cp .circleci/aws-config ~/.aws/config
       - run:
           name: Deploying application to Elastic Beanstalk
           command: export AWS_EB_PROFILE=${CIRCLE_BRANCH} && eb deploy
