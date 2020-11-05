@@ -1,14 +1,10 @@
 branch-defaults:
  main:
-   environment: Prod
+   environment: Env-Prod
  uat:
    environment: Env-UAT
-environment-defaults:
- e:
-   branch: null
-   repository: null
 global:
- application_name: DevOps-HelloWorld-test
+ application_name: SysDev-HelloWorld
  default_ec2_keyname: null
  default_platform: arn:aws:elasticbeanstalk:eu-west-2::platform/PHP 7.4 running on 64bit Amazon Linux 2
  default_region: eu-west-2
