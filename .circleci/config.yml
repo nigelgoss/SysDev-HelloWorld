@@ -28,7 +28,7 @@ jobs:
       - run:
           name: Check
           working_directory: ~/app/.aws/
-          command: ls 
+          command: cat config
       - run:
           name: Installing deployment dependencies
           working_directory: /
