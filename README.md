@@ -20,3 +20,4 @@
 * **.ebextensions/environment.config.uat** *uat branch PHP $_SERVER variables*
 * **.ebextensions/php.config** *Configure PHP within Elastic Beanstalk*
 * **.ebignore** *Files to be excluded from deployment stage*
+
