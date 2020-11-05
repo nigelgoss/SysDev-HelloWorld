@@ -34,7 +34,7 @@ jobs:
           command: sudo pip install awsebcli --upgrade
       - run:
           name: Deploying application to Elastic Beanstalk
-          command: eb deploy
+          command: export AWS_EB_PROFILE=${CIRCLE_BRANCH} && eb deploy
 
 workflows:
   version: 2
