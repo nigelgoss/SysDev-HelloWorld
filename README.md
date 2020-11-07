@@ -8,11 +8,16 @@
 * Branch protection rules
 
 ### SonarCloud
-* **sonar-project.properties**
+* **sonar-project.properties**  *SonarCloud configuration*
 
 ### CircleCI
 * **AWS_ACCESS_KEY_ID** & **AWS_SECRET_ACCESS_KEY** & **AWS_SESSION_TOKEN**
 * **.circleci/config.yml**
+
+### Jest
+* **package.json** *Node.js configuration*
+* **jest.config.js** *Jest configuration*
+* **__test__** *Folder to contain Jest tests*
 
 ### AWS - Elastic Beanstalk
 * **.elasticbeanstalk/config.yml** *Elastic Beanstalk configuration*
@@ -20,4 +25,3 @@
 * **.ebextensions/environment.config.uat** *uat branch PHP $_SERVER variables*
 * **.ebextensions/php.config** *Configure PHP within Elastic Beanstalk*
 * **.ebignore** *Files to be excluded from deployment stage*
-
