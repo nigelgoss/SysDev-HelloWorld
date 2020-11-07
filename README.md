@@ -19,7 +19,7 @@
 
 ### Jest
 * **jest.config.js** *Jest configuration*
-* **\_\_test\_\_** *Folder to contain Jest tests*
+* **\_\_tests\_\_** *Folder to contain Jest tests*
 
 ### AWS - Elastic Beanstalk
 * **.elasticbeanstalk/config.yml** *Elastic Beanstalk configuration*
