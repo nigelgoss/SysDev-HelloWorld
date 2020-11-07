@@ -8,10 +8,10 @@ jobs:
       - checkout
       - run:
           name: Install npm dependencies
-          command: npm version
+          command: npm install --dev
       - run:
           name: Run tests
-          command: npm version
+          command: npm test
   deploy-aws:
     working_directory: ~/app
     docker:
