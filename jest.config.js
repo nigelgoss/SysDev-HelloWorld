@@ -1,4 +1,4 @@
 module.exports = {
-	verbose: true,
-	modulePaths: ["<rootDir>/wwwroot/"],
+  verbose: true,
+  modulePaths: ["<rootDir>/wwwroot/"],
 };
