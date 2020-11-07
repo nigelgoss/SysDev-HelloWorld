@@ -3,6 +3,9 @@
 .circleci/
 .ebextensions/~*
 .git/
+__tests__/
 
+jest.config.js
+package.json
 README.md
 sonar-project.properties
