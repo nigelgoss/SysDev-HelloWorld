@@ -1,10 +1,10 @@
 branch-defaults:
  main:
    environment: SysDev-HelloWorld-Prod
-   profile: Production
+   profile: production
  uat:
    environment: SysDev-HelloWorld-UAT
-   profile: Development
+   profile: development
 global:
  application_name: SysDev-HelloWorld
  default_ec2_keyname: null
