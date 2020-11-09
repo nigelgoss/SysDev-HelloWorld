@@ -1,9 +1,9 @@
 branch-defaults:
  main:
-   environment: SysDev-HelloWorld-Prod
+   environment: SysDev-HelloWorld-Production
    profile: production
  uat:
-   environment: SysDev-HelloWorld-UAT
+   environment: SysDev-HelloWorld-Development
    profile: development
 global:
  application_name: SysDev-HelloWorld
