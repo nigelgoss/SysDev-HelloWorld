@@ -31,7 +31,7 @@ jobs:
           command: sudo pip install awsebcli --upgrade
       - run:
           name: Deploying application to Elastic Beanstalk 
-          command: eb deploy
+          command: aws configure --profile "production" && eb deploy
 
 workflows:
   version: 2
