@@ -31,7 +31,8 @@ jobs:
           command: sudo pip install awsebcli --upgrade
       - run:
           name: Deploying application to Elastic Beanstalk eb deploy
-          command: cat ~/.aws/config
+          working_directory: ~/app/.aws/
+          command: cat config
 
 workflows:
   version: 2
