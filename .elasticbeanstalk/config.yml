@@ -1,8 +1,10 @@
 branch-defaults:
  main:
    environment: SysDev-HelloWorld-Prod
+   profile: Production
  uat:
    environment: SysDev-HelloWorld-UAT
+   profile: Development
 global:
  application_name: SysDev-HelloWorld
  default_ec2_keyname: null
@@ -12,6 +14,5 @@ global:
  instance_profile: null
  platform_name: null
  platform_version: null
- profile: null
  sc: git
  workspace_type: Application
