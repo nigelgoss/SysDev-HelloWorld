@@ -10,8 +10,8 @@ jobs:
           name: Install npm dependencies
           command: npm install --dev
       - run:
-          name: Run tests
-          command: npm test
+          name: Run tests npm test
+          command: npm version
   deploy-aws:
     working_directory: ~/app
     docker:
@@ -30,8 +30,8 @@ jobs:
           working_directory: /
           command: sudo pip install awsebcli --upgrade
       - run:
-          name: Deploying application to Elastic Beanstalk export AWS_EB_PROFILE=${CIRCLE_BRANCH} && 
-          command: eb deploy
+          name: Deploying application to Elastic Beanstalk
+          command: export AWS_EB_PROFILE=${CIRCLE_BRANCH} && eb deploy
 
 workflows:
   version: 2
