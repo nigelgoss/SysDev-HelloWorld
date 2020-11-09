@@ -1,8 +1,8 @@
 branch-defaults:
  main:
-   environment: Env-Prod
+   environment: SysDev-HelloWorld-Prod
  uat:
-   environment: Env-UAT
+   environment: SysDev-HelloWorld-UAT
 global:
  application_name: SysDev-HelloWorld
  default_ec2_keyname: null
