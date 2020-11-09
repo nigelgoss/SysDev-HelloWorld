@@ -25,7 +25,7 @@ jobs:
       - run:
           name: Updating JavaScript config file
           command: cd .circleci && chmod +x ${CIRCLE_BRANCH}-js-config.sh && ./${CIRCLE_BRANCH}-js-config.sh
-     - run:
+      - run:
           name: Installing deployment dependencies
           working_directory: /
           command: sudo pip install awsebcli --upgrade
