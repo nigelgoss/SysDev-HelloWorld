@@ -7,7 +7,7 @@
 * cd SysDev-HelloWorld
 * git add .
 * git commit commit -m "Cloud9"
-* git push
+* git push *Username and GitHub Personal Access Token*
 
 ### GitHub
 * Branch protection rules
