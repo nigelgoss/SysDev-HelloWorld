@@ -3,11 +3,12 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=nigelgoss_devops-helloworld&metric=alert_status)](https://sonarcloud.io/dashboard?id=nigelgoss_devops-helloworld)
 
 ### AWS - Cloud 9
-* git clone https://github.com/nigelgoss/SysDev-HelloWorld.git
-* cd SysDev-HelloWorld
-* git add .
-* git commit commit -m "Cloud9"
-* git push *Username and GitHub Personal Access Token*
+* ?? git config credential.helper
+* **git clone https://github.com/nigelgoss/SysDev-HelloWorld.git**
+* **cd SysDev-HelloWorld**
+* **git add .**
+* **git commit commit -m "Msg"**
+* **git push** *Username and GitHub Personal Access Token*
 
 ### GitHub
 * Branch protection rules
