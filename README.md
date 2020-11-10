@@ -2,7 +2,9 @@
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=nigelgoss_devops-helloworld&metric=alert_status)](https://sonarcloud.io/dashboard?id=nigelgoss_devops-helloworld)
 
-### VS Code
+### AWS - Cloud 9
+* git clone https://github.com/nigelgoss/SysDev-HelloWorld.git
+* cd SysDev-HelloWorld
 
 ### GitHub
 * Branch protection rules
