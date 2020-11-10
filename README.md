@@ -5,6 +5,8 @@
 ### AWS - Cloud 9
 * git clone https://github.com/nigelgoss/SysDev-HelloWorld.git
 * cd SysDev-HelloWorld
+* git add .
+* git commit commit -m "Cloud9"
 
 ### GitHub
 * Branch protection rules
