@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+	
+		<style>
+		
+			input[type='text'] { width:100%; box-sizing:border-box; }
+			input[type='number'] { width:100%; box-sizing:border-box; }
+			textarea { width:100%; resize:none; height:80px; box-sizing:border-box; }
+			button { width:100%; padding:10px; }
+			
+			section { padding:10px; border:1px solid lightgrey; display:grid; grid-gap:10px; grid-template-columns:minmax(0, 1fr) minmax(0, 2fr); }
+			section:last-of-type { grid-column:1/-1; grid-template-columns:repeat(2, minmax(0, 1fr)); }
+			
+			@media only screen and (max-width:500px) {
+				section { grid-template-columns:auto; }
+				section:last-of-type { grid-template-columns:auto; }
+			}
+			
+			section.h { grid-column:1/-1; background-color:blue; color:white; font-weight:bold; font-size:1.2em; }
+			
+		</style>
+		
+		<script>
+		
+			const process = $d => {
+			
+				const form = $d.this.closest("form");
+			
+				if ($d.submit === 1 && form.reportValidity() === false) {
+				
+					const validations = {};
+					form.querySelectorAll("*[name]").forEach($v => {
+						if ($v.validationMessage === "") return;
+						validations[$v.name] = $v.validationMessage
+					});
+					
+					let message = "Please complete all of the fields as required:\n";
+					Object.keys(validations).forEach($v => {
+						message += "\n" + $v + ": " + validations[$v];
+					});
+					
+					alert(message);
+					return;
+					
+				};
+				
+				alert("Saved");
+				
+			};
+			
+		</script>
+	
+	</head>
+	
+	<body style="font-family:Arial; margin:0;">
+	
+		<h1 style="text-align:center;">Form Title</h1>
+		<h2 style="text-align:center;">Description of how to use this form</h2>
+	
+		<form action="javascript:void(0);" style="display:grid; grid-gap:10px; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));">
+			
+			<section class="h">One</section>
+			
+			<section>
+				<div>Name</div>
+				<div>
+					<input name="Name" type="text" required />
+				</div>
+			</section>
+			
+			<section>
+				<div>Gender</div>
+				<div style="display:grid; grid-gap:10px; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
+					<label><input type="radio" name="Gender" value="Male" required />Male</label>
+					<label><input type="radio" name="Gender" value="Female" required />Female</label>
+					<label><input type="radio" name="Gender" value="Other" required />Other</label>
+					<label><input type="radio" name="Gender" value="Male" required />Male</label>
+					<label><input type="radio" name="Gender" value="Female" required />Female</label>
+					<label><input type="radio" name="Gender" value="Other" required />Other</label>
+				</div>
+			</section>
+			
+			<section>
+				<div>Question 3</div>
+				<div>
+					<input name="Number question" type="number" min="10" max="20" required />
+				</div>
+			</section>
+			
+			<section class="h">Two</section>
+			
+			<section>
+				<div>Question 4</div>
+				<div>
+					<textarea  name="c" required></textarea>
+				</div>
+			</section>
+			
+			<section>
+				<button type="button" onpointerdown="process({this:this, submit:0});">Save draft</button>
+				<button type="button" onpointerdown="process({this:this, submit:1});">Save final and Submit</button>
+			</section>
+			
+		</form>	
+		
+	</body>
+	
+</html>
